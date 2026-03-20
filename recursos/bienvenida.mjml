@@ -1,0 +1,248 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Bienvenida - Gestión de Riesgos</mj-title>
+    <mj-preview>Te damos la bienvenida a la aplicación de Gestión de crisis</mj-preview>
+
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+
+    <mj-attributes>
+      <mj-all font-family="Poppins, Arial, sans-serif" />
+      <mj-text padding="0 40px" color="#1a1a1a" font-size="12px" line-height="16px" />
+      <mj-section padding="0" />
+      <mj-button font-family="Poppins, Arial, sans-serif" />
+    </mj-attributes>
+
+    <mj-html-attributes>
+      <mj-selector path=".email-heading div">
+        <mj-html-attribute name="role">heading</mj-html-attribute>
+        <mj-html-attribute name="aria-level">1</mj-html-attribute>
+      </mj-selector>
+    </mj-html-attributes>
+
+    <mj-style inline="inline">
+      .footer-link a {
+        color: #1a2744 !important;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .footer-icon {
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+    </mj-style>
+
+    <mj-style>
+      @media only screen and (max-width: 480px) {
+        .logo-vertical-mobile {
+          display: none !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#ffffff" width="600px">
+
+    <!-- Header azul con marca de agua como fondo -->
+    <mj-section
+      background-color="#2563eb"
+      background-url="https://gcrisis.blob.core.windows.net/emails/logo-marca-agua.png"
+      background-position="90% 0%"
+      background-repeat="no-repeat"
+      background-size="200px"
+      padding="40px 40px 40px 40px"
+    >
+      <mj-column>
+        <mj-text padding="0" color="#ffffff" font-size="12px" font-weight="400" line-height="12px">
+          <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+            <tr>
+              <td style="vertical-align:middle;padding-right:12px;">
+                <img src="https://gcrisis.blob.core.windows.net/emails/logo-blanco.png" alt="Gestión de Riesgos Logo" width="41" height="41" style="display:block;width:41px;min-width:41px;height:41px;" />
+              </td>
+              <td style="vertical-align:middle;">
+                Gestión de Riesgos<br />
+                <span style="font-size:8px;font-weight:400;line-height:16px;letter-spacing:-0.16px;">País Colombia</span>
+              </td>
+            </tr>
+          </table>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Título principal -->
+    <mj-section background-color="#ffffff" padding="40px 0 0 0">
+      <mj-column>
+        <mj-text
+          css-class="email-heading"
+          font-size="16px"
+          font-weight="700"
+          color="#2563eb"
+          align="center"
+          padding="0 40px"
+          line-height="22px"
+          letter-spacing="-0.32px"
+        >
+          ¡Te damos la bienvenida a la aplicación de Gestión de crisis!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Saludo -->
+    <mj-section background-color="#ffffff" padding="24px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Hola, {username}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Párrafos de bienvenida -->
+    <mj-section background-color="#ffffff" padding="12px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Te damos una cordial bienvenida a la aplicación de gestión de riesgos y desastres naturales.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="12px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Ahora haces parte de una plataforma diseñada para fortalecer la respuesta ante emergencias, facilitando el acceso a información clave y la gestión eficiente de recursos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA: Para comenzar (subtítulo bold) -->
+    <mj-section background-color="#ffffff" padding="24px 0 0 0">
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="12px"
+          font-weight="700"
+          color="#2563eb"
+          line-height="16px"
+          padding="0 40px"
+        >
+          Para comenzar ingresa a la aplicación a través del enlace
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Botón principal con border-radius 4px -->
+    <mj-section background-color="#ffffff" padding="16px 0 0 0">
+      <mj-column>
+        <mj-button
+          href="https://admin.gestionderiesgos.com"
+          background-color="#2563eb"
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          line-height="20px"
+          border-radius="4px"
+          inner-padding="10px 16px"
+          padding="0 40px"
+        >
+          <img src="https://gcrisis.blob.core.windows.net/emails/arrow-right-circle.png" alt="" width="20" height="20" style="vertical-align:middle;margin-right:8px;" />Administrador Gestión de Riesgos
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Texto credenciales -->
+    <mj-section background-color="#ffffff" padding="24px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Utiliza las siguientes credenciales:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Caja de credenciales -->
+    <mj-section background-color="#ffffff" padding="16px 40px 40px 40px">
+      <mj-column background-color="#eff6ff" border-radius="12px" padding="28px 20px">
+        <mj-text
+          align="center"
+          font-size="16px"
+          font-weight="600"
+          color="#2563eb"
+          line-height="24px"
+          letter-spacing="-0.32px"
+          padding="0 10px 4px 10px"
+        >
+          Usuario:
+        </mj-text>
+        <mj-text
+          align="center"
+          font-size="18px"
+          font-weight="500"
+          color="#1a1a1a"
+          line-height="28px"
+          letter-spacing="-0.36px"
+          padding="0 10px 20px 10px"
+        >
+          {email}
+        </mj-text>
+        <mj-text
+          align="center"
+          font-size="16px"
+          font-weight="600"
+          color="#2563eb"
+          line-height="24px"
+          letter-spacing="-0.32px"
+          padding="0 10px 4px 10px"
+        >
+          Contraseña temporal:
+        </mj-text>
+        <mj-text
+          align="center"
+          font-size="18px"
+          font-weight="500"
+          color="#1a1a1a"
+          line-height="28px"
+          letter-spacing="-0.36px"
+          padding="0 10px"
+        >
+          {Temporalpassword}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer azul claro - Línea decorativa + datos de contacto -->
+    <mj-section background-color="#DBEAFE" padding="20px 40px 0 40px">
+      <mj-column>
+        <mj-divider border-color="#93C5FD" border-width="1px" border-style="solid" padding="0 0 20px 0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#DBEAFE" padding="0 40px 28px 40px">
+      <mj-column width="8%" vertical-align="top" css-class="logo-vertical-mobile">
+        <mj-image
+          src="https://gcrisis.blob.core.windows.net/emails/logo-vetical.png"
+          alt="Gestión de Riesgos"
+          width="16px"
+          align="left"
+          padding="0"
+        />
+      </mj-column>
+      <mj-column width="46%" vertical-align="top">
+        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
+          <img src="https://gcrisis.blob.core.windows.net/emails/website-Icon.png" alt="web" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="https://ayuda.gestionderiesgos.com" style="color:#1a2744;text-decoration:none;">ayuda.gestionderiesgos.com</a>
+        </mj-text>
+        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
+          <img src="https://gcrisis.blob.core.windows.net/emails/phone-icon.png" alt="tel" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="tel:+573120769865" style="color:#1a2744;text-decoration:none;">+ 57 312 076 9865</a>
+        </mj-text>
+        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
+          <img src="https://gcrisis.blob.core.windows.net/emails/email-icon.png" alt="email" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="mailto:jhondoe@gmail.com" style="color:#1a2744;text-decoration:none;">jhondoe@gmail.com</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="46%" vertical-align="top">
+        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
+          <img src="https://gcrisis.blob.core.windows.net/emails/privacy-policy-icon.png" alt="privacidad" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="#" style="color:#1a2744;text-decoration:none;">Política de privacidad</a>
+        </mj-text>
+        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
+          <img src="https://gcrisis.blob.core.windows.net/emails/pqr-icon.png" alt="PQR" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="#" style="color:#1a2744;text-decoration:none;">PQR's</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
