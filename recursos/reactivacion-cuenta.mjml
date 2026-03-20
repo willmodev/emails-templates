@@ -1,7 +1,7 @@
 <mjml lang="es">
   <mj-head>
-    <mj-title>Bienvenida - Gestión de Riesgos</mj-title>
-    <mj-preview>Te damos la bienvenida a la aplicación de Gestión de crisis</mj-preview>
+    <mj-title>Cuenta reactivada - Gestión de Riesgos</mj-title>
+    <mj-preview>Tu cuenta en la aplicación de Gestión de Crisis ha sido reactivada</mj-preview>
 
     <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
 
@@ -81,7 +81,7 @@
           line-height="22px"
           letter-spacing="-0.32px"
         >
-          ¡Te damos la bienvenida a la aplicación de Gestión de crisis!
+          Tu cuenta ha sido reactivada
         </mj-text>
       </mj-column>
     </mj-section>
@@ -90,29 +90,29 @@
     <mj-section background-color="#ffffff" padding="24px 0 0 0">
       <mj-column>
         <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Hola, {username}
+          Estimado/a {username},
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Párrafos de bienvenida -->
+    <!-- Texto informativo -->
     <mj-section background-color="#ffffff" padding="12px 0 0 0">
       <mj-column>
         <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Te damos una cordial bienvenida a la aplicación de gestión de riesgos y desastres naturales.
+          Te informamos que tu cuenta en la aplicación de <strong>Gestión de Crisis</strong> ha sido reactivada correctamente.
         </mj-text>
       </mj-column>
     </mj-section>
 
     <mj-section background-color="#ffffff" padding="12px 0 0 0">
       <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Ahora haces parte de una plataforma diseñada para fortalecer la respuesta ante emergencias, facilitando el acceso a información clave y la gestión eficiente de recursos.
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px" color="#64748b" font-style="italic">
+          Esta notificación ha sido generada automáticamente por el sistema, por favor no respondas a este correo.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- CTA: Para comenzar (subtítulo bold) -->
+    <!-- CTA -->
     <mj-section background-color="#ffffff" padding="24px 0 0 0">
       <mj-column>
         <mj-text
@@ -123,12 +123,12 @@
           line-height="16px"
           padding="0 40px"
         >
-          Para comenzar ingresa a la aplicación a través del enlace
+          Haz clic en el siguiente enlace para acceder a la aplicación
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Botón principal con border-radius 4px -->
+    <!-- Botón principal -->
     <mj-section background-color="#ffffff" padding="16px 0 0 0">
       <mj-column>
         <mj-button
@@ -142,66 +142,25 @@
           inner-padding="10px 16px"
           padding="0 40px"
         >
-          <img src="https://gcrisis.blob.core.windows.net/emails/arrow-right-circle.png" alt="" width="20" height="20" style="vertical-align:middle;margin-right:8px;" />Administrador Gestión de Riesgos
+          <img src="https://gcrisis.blob.core.windows.net/emails/arrow-right-circle.png" alt="" width="20" height="20" style="vertical-align:middle;margin-right:8px;" />Gestión de Crisis
         </mj-button>
       </mj-column>
     </mj-section>
 
-    <!-- Texto credenciales -->
-    <mj-section background-color="#ffffff" padding="24px 0 0 0">
+    <!-- Texto alternativo enlace -->
+    <mj-section background-color="#ffffff" padding="12px 0 0 0">
       <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Utiliza las siguientes credenciales:
+        <mj-text padding="0 40px" font-size="11px" font-weight="400" line-height="16px" color="#64748b" align="center">
+          Si el enlace no funciona, cópialo y pégalo en tu navegador.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Caja de credenciales -->
-    <mj-section background-color="#ffffff" padding="16px 40px 40px 40px">
-      <mj-column background-color="#eff6ff" border-radius="12px" padding="28px 20px">
-        <mj-text
-          align="center"
-          font-size="16px"
-          font-weight="600"
-          color="#2563eb"
-          line-height="24px"
-          letter-spacing="-0.32px"
-          padding="0 10px 4px 10px"
-        >
-          Usuario:
-        </mj-text>
-        <mj-text
-          align="center"
-          font-size="18px"
-          font-weight="500"
-          color="#1a1a1a"
-          line-height="28px"
-          letter-spacing="-0.36px"
-          padding="0 10px 20px 10px"
-        >
-          {email}
-        </mj-text>
-        <mj-text
-          align="center"
-          font-size="16px"
-          font-weight="600"
-          color="#2563eb"
-          line-height="24px"
-          letter-spacing="-0.32px"
-          padding="0 10px 4px 10px"
-        >
-          Contraseña temporal:
-        </mj-text>
-        <mj-text
-          align="center"
-          font-size="18px"
-          font-weight="500"
-          color="#1a1a1a"
-          line-height="28px"
-          letter-spacing="-0.36px"
-          padding="0 10px"
-        >
-          {temporalPassword}
+    <!-- Nota de seguridad -->
+    <mj-section background-color="#ffffff" padding="24px 0 40px 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          <strong style="color:#2563eb;">Nota:</strong> Si no solicitaste esta reactivación, por favor contacta a soporte inmediatamente.
         </mj-text>
       </mj-column>
     </mj-section>

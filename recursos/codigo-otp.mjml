@@ -1,7 +1,7 @@
 <mjml lang="es">
   <mj-head>
-    <mj-title>Bienvenida - Gestión de Riesgos</mj-title>
-    <mj-preview>Te damos la bienvenida a la aplicación de Gestión de crisis</mj-preview>
+    <mj-title>Reestablece tu contraseña - Gestión de Riesgos</mj-title>
+    <mj-preview>Usa este código para reestablecer tu contraseña</mj-preview>
 
     <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
 
@@ -81,7 +81,7 @@
           line-height="22px"
           letter-spacing="-0.32px"
         >
-          ¡Te damos la bienvenida a la aplicación de Gestión de crisis!
+          Reestablece tu contraseña
         </mj-text>
       </mj-column>
     </mj-section>
@@ -95,69 +95,17 @@
       </mj-column>
     </mj-section>
 
-    <!-- Párrafos de bienvenida -->
+    <!-- Texto explicativo -->
     <mj-section background-color="#ffffff" padding="12px 0 0 0">
       <mj-column>
         <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Te damos una cordial bienvenida a la aplicación de gestión de riesgos y desastres naturales.
+          Hemos recibido tu solicitud para reestablecer tu contraseña. Usa el siguiente código para continuar con el proceso:
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#ffffff" padding="12px 0 0 0">
-      <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Ahora haces parte de una plataforma diseñada para fortalecer la respuesta ante emergencias, facilitando el acceso a información clave y la gestión eficiente de recursos.
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- CTA: Para comenzar (subtítulo bold) -->
-    <mj-section background-color="#ffffff" padding="24px 0 0 0">
-      <mj-column>
-        <mj-text
-          align="center"
-          font-size="12px"
-          font-weight="700"
-          color="#2563eb"
-          line-height="16px"
-          padding="0 40px"
-        >
-          Para comenzar ingresa a la aplicación a través del enlace
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- Botón principal con border-radius 4px -->
-    <mj-section background-color="#ffffff" padding="16px 0 0 0">
-      <mj-column>
-        <mj-button
-          href="{url}"
-          background-color="#2563eb"
-          color="#ffffff"
-          font-size="14px"
-          font-weight="600"
-          line-height="20px"
-          border-radius="4px"
-          inner-padding="10px 16px"
-          padding="0 40px"
-        >
-          <img src="https://gcrisis.blob.core.windows.net/emails/arrow-right-circle.png" alt="" width="20" height="20" style="vertical-align:middle;margin-right:8px;" />Administrador Gestión de Riesgos
-        </mj-button>
-      </mj-column>
-    </mj-section>
-
-    <!-- Texto credenciales -->
-    <mj-section background-color="#ffffff" padding="24px 0 0 0">
-      <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Utiliza las siguientes credenciales:
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- Caja de credenciales -->
-    <mj-section background-color="#ffffff" padding="16px 40px 40px 40px">
+    <!-- Caja de código OTP -->
+    <mj-section background-color="#ffffff" padding="24px 40px 0 40px">
       <mj-column background-color="#eff6ff" border-radius="12px" padding="28px 20px">
         <mj-text
           align="center"
@@ -166,42 +114,29 @@
           color="#2563eb"
           line-height="24px"
           letter-spacing="-0.32px"
-          padding="0 10px 4px 10px"
+          padding="0 10px 12px 10px"
         >
-          Usuario:
+          Código de restablecimiento
         </mj-text>
         <mj-text
           align="center"
-          font-size="18px"
-          font-weight="500"
-          color="#1a1a1a"
-          line-height="28px"
-          letter-spacing="-0.36px"
-          padding="0 10px 20px 10px"
-        >
-          {email}
-        </mj-text>
-        <mj-text
-          align="center"
-          font-size="16px"
+          font-size="40px"
           font-weight="600"
-          color="#2563eb"
-          line-height="24px"
-          letter-spacing="-0.32px"
-          padding="0 10px 4px 10px"
-        >
-          Contraseña temporal:
-        </mj-text>
-        <mj-text
-          align="center"
-          font-size="18px"
-          font-weight="500"
           color="#1a1a1a"
-          line-height="28px"
-          letter-spacing="-0.36px"
+          line-height="40px"
+          letter-spacing="-0.8px"
           padding="0 10px"
         >
-          {temporalPassword}
+          {otpCode}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Nota de validez -->
+    <mj-section background-color="#ffffff" padding="24px 0 40px 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Este código es válido por un tiempo limitado. Si no realizaste ninguna solicitud, puedes ignorar este mensaje.
         </mj-text>
       </mj-column>
     </mj-section>
