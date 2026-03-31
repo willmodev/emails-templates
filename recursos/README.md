@@ -23,9 +23,7 @@ npx mjml reactivacion-cuenta.mjml -o reactivacion-cuenta.html --config.minify=tr
 Para almacenar las plantillas en base64 (por ejemplo, en la DB):
 
 ```bash
-base64 -w 0 bienvenida.html > bienvenida.base64.txt
-base64 -w 0 codigo-otp.html > codigo-otp.base64.txt
-base64 -w 0 reactivacion-cuenta.html > reactivacion-cuenta.base64.txt
+base64 -w 0 bienvenida.html > bienvenida.base64.txt; base64 -w 0 codigo-otp.html > codigo-otp.base64.txt; base64 -w 0 reactivacion-cuenta.html > reactivacion-cuenta.base64.txt; base64 -w 0 correo-prueba-smtp.html > correo-prueba-smtp.base64.txt; ls -lh *.base64.txt
 ```
 
 > Los estilos no se alteran porque están inline en el HTML. Al decodificar el base64 se obtiene el HTML original intacto.

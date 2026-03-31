@@ -1,7 +1,7 @@
 <mjml lang="es">
   <mj-head>
-    <mj-title>Bienvenida - Gestión de Riesgos</mj-title>
-    <mj-preview>Te damos la bienvenida a la aplicación de Gestión de crisis</mj-preview>
+    <mj-title>Correo de prueba SMTP - Gestión de Riesgos</mj-title>
+    <mj-preview>Comprobación de la configuración del servidor de correo</mj-preview>
 
     <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
 
@@ -63,7 +63,7 @@
           line-height="22px"
           letter-spacing="-0.32px"
         >
-          ¡Te damos la bienvenida a la aplicación de Gestión de crisis!
+          Correo de prueba SMTP
         </mj-text>
       </mj-column>
     </mj-section>
@@ -77,69 +77,17 @@
       </mj-column>
     </mj-section>
 
-    <!-- Párrafos de bienvenida -->
+    <!-- Mensaje principal -->
     <mj-section background-color="#FFFFFF" padding="12px 0 0 0">
       <mj-column>
         <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Te damos una cordial bienvenida a la aplicación de gestión de crisis.
+          Si estas leyendo este mensaje, la configuración del servidor del correo (SMTP) es correcta y el envío desde la aplicación de Gestión de crisis está funcionando.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#FFFFFF" padding="12px 0 0 0">
-      <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Ahora haces parte de una plataforma diseñada para fortalecer la respuesta ante emergencias, facilitando el acceso a información clave y la gestión eficiente de recursos.
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- CTA: Para comenzar (subtítulo bold) -->
-    <mj-section background-color="#FFFFFF" padding="24px 0 0 0">
-      <mj-column>
-        <mj-text
-          align="center"
-          font-size="12px"
-          font-weight="700"
-          color="{primaryColor}"
-          line-height="16px"
-          padding="0 40px"
-        >
-          Para comenzar ingresa a la aplicación a través del enlace
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- Botón principal -->
-    <mj-section background-color="#FFFFFF" padding="16px 0 0 0">
-      <mj-column>
-        <mj-button
-          href="{ctaUrl}"
-          background-color="{primaryColor}"
-          color="#ffffff"
-          font-size="14px"
-          font-weight="600"
-          line-height="20px"
-          border-radius="6px"
-          inner-padding="10px 16px"
-          padding="0 40px"
-        >
-          <img src="https://gcrisis.blob.core.windows.net/emails/arrow-right-circle.png" alt="" width="20" height="20" style="vertical-align:middle;margin-right:8px;" />Administrador Gestión de Crisis
-        </mj-button>
-      </mj-column>
-    </mj-section>
-
-    <!-- Texto credenciales -->
-    <mj-section background-color="#FFFFFF" padding="24px 0 0 0">
-      <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Utiliza las siguientes credenciales:
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- Caja de credenciales -->
-    <mj-section background-color="#FFFFFF" padding="16px 40px 40px 40px">
+    <!-- Caja de confirmación -->
+    <mj-section background-color="#FFFFFF" padding="24px 40px 0 40px">
       <mj-column background-color="{primaryLightBg}" border-radius="20px" padding="28px 20px">
         <mj-text
           align="center"
@@ -148,42 +96,28 @@
           color="{primaryColor}"
           line-height="24px"
           letter-spacing="-0.32px"
-          padding="0 10px 4px 10px"
+          padding="0 10px 12px 10px"
         >
-          Usuario:
-        </mj-text>
-        <mj-text
-          align="center"
-          font-size="18px"
-          font-weight="500"
-          color="#1a1a1a"
-          line-height="28px"
-          letter-spacing="-0.36px"
-          padding="0 10px 20px 10px"
-        >
-          {email}
+          Configuración verificada
         </mj-text>
         <mj-text
           align="center"
           font-size="16px"
           font-weight="600"
-          color="{primaryColor}"
-          line-height="24px"
-          letter-spacing="-0.32px"
-          padding="0 10px 4px 10px"
-        >
-          Contraseña temporal:
-        </mj-text>
-        <mj-text
-          align="center"
-          font-size="18px"
-          font-weight="500"
           color="#1a1a1a"
           line-height="28px"
-          letter-spacing="-0.36px"
           padding="0 10px"
         >
-          {temporalPassword}
+          El servidor SMTP responde correctamente y los correos se están enviando sin problemas.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Aviso -->
+    <mj-section background-color="#FFFFFF" padding="24px 0 40px 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px" color="#1f2937" font-style="italic">
+          Este mensaje se generó automáticamente al usar la opción «Enviar correo de prueba» en la administración del sistema. No es necesario responder.
         </mj-text>
       </mj-column>
     </mj-section>

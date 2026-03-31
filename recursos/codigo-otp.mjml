@@ -20,62 +20,44 @@
     </mj-html-attributes>
 
     <mj-style inline="inline">
-      .footer-link a {
-        color: #1a2744 !important;
-        text-decoration: none;
-        font-size: 13px;
+      .logo-max {
+        text-align: center !important;
       }
-      .footer-icon {
-        vertical-align: middle;
-        margin-right: 6px;
-      }
-    </mj-style>
-
-    <mj-style>
-      @media only screen and (max-width: 480px) {
-        .logo-vertical-mobile {
-          display: none !important;
-        }
+      .logo-max img {
+        max-width: 250px !important;
+        max-height: 126px !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
       }
     </mj-style>
   </mj-head>
 
-  <mj-body background-color="#ffffff" width="600px">
+  <mj-body background-color="#FFFFFF" width="600px">
 
-    <!-- Header azul con marca de agua como fondo -->
-    <mj-section
-      background-color="#2563eb"
-      background-url="https://gcrisis.blob.core.windows.net/emails/logo-marca-agua.png"
-      background-position="90% 0%"
-      background-repeat="no-repeat"
-      background-size="200px"
-      padding="40px 40px 40px 40px"
-    >
+    <!-- Header limpio de 80px -->
+    <mj-section background-color="{primaryColor}" padding="0">
       <mj-column>
-        <mj-text padding="0" color="#ffffff" font-size="12px" font-weight="400" line-height="12px">
-          <table cellpadding="0" cellspacing="0" border="0" role="presentation">
-            <tr>
-              <td style="vertical-align:middle;padding-right:12px;">
-                <img src="https://gcrisis.blob.core.windows.net/emails/logo-blanco.png" alt="Gestión de Riesgos Logo" width="41" height="41" style="display:block;width:41px;min-width:41px;height:41px;" />
-              </td>
-              <td style="vertical-align:middle;">
-                Gestión de Riesgos<br />
-                <span style="font-size:8px;font-weight:400;line-height:16px;letter-spacing:-0.16px;">País Colombia</span>
-              </td>
-            </tr>
-          </table>
-        </mj-text>
+        <mj-spacer height="80px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Marca en cuerpo -->
+    <mj-section background-color="#FFFFFF" padding="40px 0 0 0">
+      <mj-column>
+        <mj-image css-class="logo-max" src="{logoUrl}" alt="Gestión de Crisis" align="center" padding="0" />
       </mj-column>
     </mj-section>
 
     <!-- Título principal -->
-    <mj-section background-color="#ffffff" padding="40px 0 0 0">
+    <mj-section background-color="#FFFFFF" padding="24px 0 0 0">
       <mj-column>
         <mj-text
           css-class="email-heading"
           font-size="16px"
           font-weight="700"
-          color="#2563eb"
+          color="{primaryColor}"
           align="center"
           padding="0 40px"
           line-height="22px"
@@ -86,45 +68,104 @@
       </mj-column>
     </mj-section>
 
-    <!-- Saludo -->
-    <mj-section background-color="#ffffff" padding="24px 0 0 0">
+    <!-- Asunto -->
+    <mj-section background-color="#FFFFFF" padding="36px 0 0 0">
       <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Hola, {username}
+        <mj-text padding="0 40px" font-size="12px" font-weight="700" line-height="16px" color="#1a1a1a">
+          Asunto
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Texto explicativo -->
-    <mj-section background-color="#ffffff" padding="12px 0 0 0">
+    <mj-section background-color="#FFFFFF" padding="12px 0 0 0">
       <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Hemos recibido tu solicitud para reestablecer tu contraseña. Usa el siguiente código para continuar con el proceso:
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px" color="#4b5563">
+          Solicitud de restablecimiento de contraseña
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Caja de código OTP -->
-    <mj-section background-color="#ffffff" padding="24px 40px 0 40px">
-      <mj-column background-color="#eff6ff" border-radius="12px" padding="28px 20px">
+    <!-- Descripción -->
+    <mj-section background-color="#FFFFFF" padding="36px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="700" line-height="16px" color="#1a1a1a">
+          Descripción
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="12px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px" color="#4b5563">
+          Estimado/a, {username}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="24px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px" color="#4b5563">
+          Hemos recibido tu solicitud para reestablecer la contraseña de tu cuenta en la aplicación de gestión de crisis.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#FFFFFF" padding="32px 0 0 0">
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="12px"
+          font-weight="700"
+          color="{primaryColor}"
+          line-height="16px"
+          padding="0 40px"
+        >
+          Haz clic en el siguiente enlace seguro para crear una nueva clave de acceso
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="20px 0 0 0">
+      <mj-column>
+        <mj-button
+          href="{ctaUrl}"
+          background-color="{primaryColor}"
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          line-height="20px"
+          border-radius="6px"
+          inner-padding="10px 18px"
+          padding="0 40px"
+          width="340px"
+        >
+          <img src="https://gcrisis.blob.core.windows.net/emails/arrow-right-circle.png" alt="" width="24" height="24" style="vertical-align:middle;margin-right:10px;" />Administrador Gestión de Crisis
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Caja OTP -->
+    <mj-section background-color="#FFFFFF" padding="32px 40px 0 40px">
+      <mj-column background-color="{primaryLightBg}" border-radius="20px" padding="30px 20px 34px 20px">
         <mj-text
           align="center"
           font-size="16px"
           font-weight="600"
-          color="#2563eb"
+          color="{primaryColor}"
           line-height="24px"
           letter-spacing="-0.32px"
-          padding="0 10px 12px 10px"
+          padding="0 10px 20px 10px"
         >
           Código de restablecimiento
         </mj-text>
         <mj-text
           align="center"
-          font-size="40px"
+          font-size="52px"
           font-weight="600"
-          color="#1a1a1a"
-          line-height="40px"
-          letter-spacing="-0.8px"
+          color="#17223a"
+          line-height="52px"
+          letter-spacing="8px"
           padding="0 10px"
         >
           {otpCode}
@@ -133,48 +174,10 @@
     </mj-section>
 
     <!-- Nota de validez -->
-    <mj-section background-color="#ffffff" padding="24px 0 40px 0">
+    <mj-section background-color="#FFFFFF" padding="28px 0 48px 0">
       <mj-column>
-        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
-          Este código es válido por un tiempo limitado. Si no realizaste ninguna solicitud, puedes ignorar este mensaje.
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- Footer azul claro - Línea decorativa + datos de contacto -->
-    <mj-section background-color="#DBEAFE" padding="20px 40px 0 40px">
-      <mj-column>
-        <mj-divider border-color="#93C5FD" border-width="1px" border-style="solid" padding="0 0 20px 0" />
-      </mj-column>
-    </mj-section>
-
-    <mj-section background-color="#DBEAFE" padding="0 40px 28px 40px">
-      <mj-column width="8%" vertical-align="top" css-class="logo-vertical-mobile">
-        <mj-image
-          src="https://gcrisis.blob.core.windows.net/emails/logo-vetical.png"
-          alt="Gestión de Riesgos"
-          width="16px"
-          align="left"
-          padding="0"
-        />
-      </mj-column>
-      <mj-column width="46%" vertical-align="top">
-        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
-          <img src="https://gcrisis.blob.core.windows.net/emails/website-Icon.png" alt="web" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="https://ayuda.gestionderiesgos.com" style="color:#1a2744;text-decoration:none;">ayuda.gestionderiesgos.com</a>
-        </mj-text>
-        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
-          <img src="https://gcrisis.blob.core.windows.net/emails/phone-icon.png" alt="tel" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="tel:+573120769865" style="color:#1a2744;text-decoration:none;">+ 57 312 076 9865</a>
-        </mj-text>
-        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
-          <img src="https://gcrisis.blob.core.windows.net/emails/email-icon.png" alt="email" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="mailto:jhondoe@gmail.com" style="color:#1a2744;text-decoration:none;">jhondoe@gmail.com</a>
-        </mj-text>
-      </mj-column>
-      <mj-column width="46%" vertical-align="top">
-        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
-          <img src="https://gcrisis.blob.core.windows.net/emails/privacy-policy-icon.png" alt="privacidad" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="#" style="color:#1a2744;text-decoration:none;">Política de privacidad</a>
-        </mj-text>
-        <mj-text css-class="footer-link" padding="0 0 10px 0" color="#1a2744" font-size="13px" line-height="1.8">
-          <img src="https://gcrisis.blob.core.windows.net/emails/pqr-icon.png" alt="PQR" width="16" height="16" class="footer-icon" style="vertical-align:middle;margin-right:6px;" /><a href="#" style="color:#1a2744;text-decoration:none;">PQR's</a>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px" color="#4b5563">
+          Este código es válido por {otpValidityText}. Si no realizaste ninguna solicitud, puedes ignorar este mensaje.
         </mj-text>
       </mj-column>
     </mj-section>
