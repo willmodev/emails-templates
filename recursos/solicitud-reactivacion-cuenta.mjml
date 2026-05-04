@@ -1,0 +1,202 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>Solicitud de reactivación de cuenta - Gestión de Riesgos</mj-title>
+    <mj-preview>Un usuario ha solicitado la reactivación de su cuenta en Gestión de Crisis</mj-preview>
+
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+
+    <mj-attributes>
+      <mj-all font-family="Poppins, Arial, sans-serif" />
+      <mj-text padding="0 40px" color="#1a1a1a" font-size="12px" line-height="16px" />
+      <mj-section padding="0" />
+      <mj-button font-family="Poppins, Arial, sans-serif" />
+    </mj-attributes>
+
+    <mj-html-attributes>
+      <mj-selector path=".email-heading div">
+        <mj-html-attribute name="role">heading</mj-html-attribute>
+        <mj-html-attribute name="aria-level">1</mj-html-attribute>
+      </mj-selector>
+    </mj-html-attributes>
+
+    <mj-style inline="inline">
+      .logo-max {
+        text-align: center !important;
+      }
+      .logo-max img {
+        max-width: 250px !important;
+        max-height: 126px !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#FFFFFF" width="600px">
+
+    <!-- Header limpio de 80px -->
+    <mj-section background-color="{primaryColor}" padding="0">
+      <mj-column>
+        <mj-spacer height="80px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Marca en cuerpo -->
+    <mj-section background-color="#FFFFFF" padding="40px 0 0 0">
+      <mj-column>
+        <mj-image css-class="logo-max" src="{logoUrl}" alt="Gestión de Crisis" align="center" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Título principal -->
+    <mj-section background-color="#FFFFFF" padding="24px 0 0 0">
+      <mj-column>
+        <mj-text
+          css-class="email-heading"
+          font-size="16px"
+          font-weight="700"
+          color="{primaryColor}"
+          align="center"
+          padding="0 40px"
+          line-height="22px"
+          letter-spacing="-0.32px"
+        >
+          Solicitud de reactivación de cuenta
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Saludo -->
+    <mj-section background-color="#FFFFFF" padding="24px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Estimado/a, {username}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Texto informativo -->
+    <mj-section background-color="#FFFFFF" padding="12px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Te informamos que el usuario {usuario_solicitante} ha solicitado la reactivación de cuenta, la cual se encuentra inactiva debido al vencimiento de su período de vigencia.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="12px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          A continuación, se detallan los datos del usuario solicitante:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Datos del solicitante: Correo electrónico -->
+    <mj-section background-color="#FFFFFF" padding="20px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="700" line-height="16px" color="#1a1a1a">
+          Correo electrónico
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="6px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          {correo_electronico}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Datos del solicitante: Fecha de vencimiento -->
+    <mj-section background-color="#FFFFFF" padding="16px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="700" line-height="16px" color="#1a1a1a">
+          Fecha de vencimiento
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="6px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          {fecha_vencimiento}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Datos del solicitante: Motivo de desactivación -->
+    <mj-section background-color="#FFFFFF" padding="16px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="700" line-height="16px" color="#1a1a1a">
+          Motivo de desactivación
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="6px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Vencimiento del período de vigencia
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Texto de invitación a validar -->
+    <mj-section background-color="#FFFFFF" padding="20px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px">
+          Te invitamos a validar la solicitud y, en caso de proceder, realizar la reactivación de la cuenta para restablecer el acceso del usuario.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Nota automática -->
+    <mj-section background-color="#FFFFFF" padding="16px 0 0 0">
+      <mj-column>
+        <mj-text padding="0 40px" font-size="12px" font-weight="400" line-height="16px" color="#1f2937" font-style="italic">
+          Esta notificación ha sido generada automáticamente por el sistema, por favor no respondas a este correo.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#FFFFFF" padding="24px 0 0 0">
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="12px"
+          font-weight="700"
+          color="{primaryColor}"
+          line-height="16px"
+          padding="0 40px"
+        >
+          Puedes ingresar a la aplicación a través del enlace
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Botón principal -->
+    <mj-section background-color="#FFFFFF" padding="16px 0 40px 0">
+      <mj-column>
+        <mj-button
+          href="{ctaUrl}"
+          background-color="{primaryColor}"
+          color="#ffffff"
+          font-size="14px"
+          font-weight="600"
+          line-height="20px"
+          border-radius="6px"
+          inner-padding="10px 16px"
+          padding="0 40px"
+        >
+          <img src="https://gcrisis.blob.core.windows.net/emails/arrow-right-circle.png" alt="" width="20" height="20" style="vertical-align:middle;margin-right:8px;" />Administrador Gestión de Crisis
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
